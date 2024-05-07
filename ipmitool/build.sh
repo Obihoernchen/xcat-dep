@@ -20,7 +20,7 @@ cd $cur_path
 
 XCAT_BUILD_DISTRO="$(check_linux_distro)"
 case "${XCAT_BUILD_DISTRO}" in
-"centos"|"fedora"|"rhel"|"sles")
+"centos"|"fedora"|"rhel"|"sles"|"rockylinux"|"almalinux")
     buildcmd="./bldipmi.pl"
     dftpath="/tmp/build/"
     pkgtype="rpm"
